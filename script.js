@@ -1,7 +1,7 @@
 // Inicialização de Ícones
 lucide.createIcons();
 
-// Gráfico de Crescimento
+// Gráfico de Crescimento //
 const ctx = document.getElementById('growthChart').getContext('2d');
 const gradient = ctx.createLinearGradient(0, 0, 0, 200);
 gradient.addColorStop(0, 'rgba(58, 131, 60, 0.25)');
