@@ -174,7 +174,7 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
 /* Ajuste para o logo do Menu */
 .logo img {
     display: block;
-    height: 35px; /* Ajuste a altura conforme necessário */
+    height: 25px; /* Ajuste a altura conforme necessário */
     width: auto;
 }
 
