@@ -192,3 +192,12 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
         max-width: 250px; /* Logo menor no celular */
     }
 }
+.footer-map {
+    border-radius: 12px; /* Deixa as bordas arredondadas */
+    overflow: hidden;    /* Garante que o mapa siga o arredondamento */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Dá uma leve profundidade */
+}
+
+.footer-map iframe {
+    display: block; /* Remove espaços vazios na base do iframe */
+}
