@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área 51 | Performance e Inovação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/area51-branco.png" alt="Área 51 Logo">
+            </div>
+            <ul>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#contato" class="btn-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="img/area51-branco.png" alt="Área 51">
+            </div>
+            <p>Projetamos impacto, entregamos performance</p>
+        </div>
+        <div class="chart-container">
+            <div class="chart-header">
+                <div class="chart-icon"><i data-lucide="trending-up"></i></div>
+                <span>Crescimento</span>
+            </div>
+            <canvas id="growthChart"></canvas>
+            <div class="chart-footer">
+                <span>2015</span>
+                <span>2020</span>
+                <span>2025</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="light-section">
+        <div class="section-header">
+            <h2>Áreas de Atuação</h2>
+            <p>Quatro pilares que sustentam nossa missão de transformar realidades</p>
+        </div>
+        <div class="grid-cards">
+            <div class="card">
+                <div class="card-icon icon-yellow"><i data-lucide="book-open"></i></div>
+                <h3 class="underline-title">Educação</h3>
+                <p>Conteúdos estratégicos aplicados à realidade de quem aprende, com o objetivo de gerar autonomia, visão e transformação.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon icon-blue"><i data-lucide="rocket"></i></div>
+                <h3 class="underline-title">Inovação</h3>
+                <p>Produtos e projetos desenhados para gerar impacto no mundo real. Conectando estratégias, tecnologias e pessoas.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon icon-orange"><i data-lucide="star"></i></div>
+                <h3 class="underline-title">Eventos</h3>
+                <p>Eventos com propósito, método e impacto real. Cada detalhe planejado com cuidado para gerar conexão, aprendizado e transformação.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon icon-green"><i data-lucide="hand-metal"></i></div>
+                <h3 class="underline-title">Impacto</h3>
+                <p>Impacto que sai do discurso e vira ação. Projetos criados para transformar realidades de forma prática e mensurável.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="white-section">
+        <div class="about-container">
+            <h2>Quem Somos</h2>
+            <p>A <strong>Área 51</strong> iniciou sua trajetória em 2015, na cidade de Porto Alegre, como um núcleo de inovação voltado à realização de cursos e workshops. Com o passar dos anos, ampliamos nossa atuação para os campos da educação, projetos e eventos, consolidando-nos como uma empresa especializada em projetos de escopo fechado, sempre atuando com soluções de impacto.</p>
+            
+            <div class="culture-card">
+                <div class="culture-header">
+                    <span class="green-indicator"></span>
+                    <h3>Cultura e Propósito</h3>
+                </div>
+                <p>Nosso propósito é gerar impacto positivo por meio de ações que promovem o desenvolvimento social do Brasil. Acreditamos na <strong>educação</strong>, na <strong>diversidade</strong> e na <strong>inovação</strong> como ferramentas de transformação coletiva.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year">2015</span>
+                    <span class="label">Fundação</span>
+                </div>
+                <div class="timeline-bar"></div>
+                <div class="timeline-item">
+                    <span class="year">Hoje</span>
+                    <span class="label">Impacto Nacional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="light-section">
+        <div class="section-header">
+            <h2>Cases</h2>
+            <p>Projetos que demonstram nossa capacidade de entregar resultados reais</p>
+        </div>
+        <div class="grid-cases">
+            <div class="case-card border-green">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/nZER0oDNcYA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="case-info">
+                    <h3>Perifa7</h3>
+                    <p>Projeto de impacto social que conecta talentos das periferias brasileiras com oportunidades reais de desenvolvimento.</p>
+                    <div class="case-buttons">
+                        <a href="/arquivos/perifa7-final.pdf" target="_blank" style="text-decoration: none;">
+                            <button class="btn-case"><i data-lucide="file-text"></i> Revista</button>
+                        </a>
+                    
+                        <a href="https://www.perifa7.com.br/" target="_blank" style="text-decoration: none;">
+                            <button class="btn-case">
+                                <i data-lucide="external-link"></i> Landing Page
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="case-card border-yellow">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="case-info">
+                    <h3>Letramento Racial Carrefour</h3>
+                    <p>Programa de formação em letramento racial para colaboradores do Grupo Carrefour Brasil.</p>
+                </div>
+            </div>
+            <div class="case-card border-blue">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="case-info">
+                    <h3>Coleção Enem - MS</h3>
+                    <p>Material didático desenvolvido para preparação de estudantes do Mato Grosso do Sul para o ENEM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <p class="partners-title">EMPRESAS QUE CONFIAM EM NOSSO TRABALHO</p>
+        <div class="logos-slider">
+            <div class="logos-track">
+                <div class="logo-item">Carrefour</div>
+                <div class="logo-item">Sam's Club</div>
+                <div class="logo-item">Atacadão</div>
+                <div class="logo-item">Estado do Mato Grosso do Sul</div>
+                <div class="logo-item">Tribeca Evento</div>
+                <div class="logo-item">Carrefour</div>
+                <div class="logo-item">Sam's Club</div>
+                <div class="logo-item">Atacadão</div>
+                <div class="logo-item">Estado do Mato Grosso do Sul</div>
+                <div class="logo-item">Tribeca Evento</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="dark-section">
+        <div class="contact-header">
+            <h2>Vamos conversar?</h2>
+            <p>Conte seu desafio. A estratégia a gente resolve.</p>
+        </div>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Nome *</label>
+                    <input type="text" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefone *</label>
+                    <input type="text" placeholder="(00) 00000-0000" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>E-mail *</label>
+                <input type="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>Mensagem *</label>
+                <textarea placeholder="Conte sobre seu projeto ou desafio..." rows="4"></textarea>
+            </div>
+            <button type="submit"><i data-lucide="send"></i> Enviar mensagem</button>
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="logo-footer">
+                    <img src="img/area51-branco.png" alt="Área 51" style="height: 40px; margin-bottom: 20px;">
+                </div>
+                <p>contato@area51educacao.com.br</p>
+                <p>Rua Olavo Bilac, 697 - Porto Alegre/RS</p>
+                <p class="copyright">© 2026 Área 51. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-map">
+                <div class="map-placeholder">
+                    <i data-lucide="map-pin"></i>
+                    <p>Porto Alegre, RS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
