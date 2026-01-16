@@ -166,32 +166,36 @@
     </section>
 
     <section id="contato" class="dark-section">
-        <div class="contact-header">
-            <h2>Vamos conversar?</h2>
-            <p>Conte seu desafio. A estratégia a gente resolve.</p>
+    <div class="contact-header">
+        <h2>Vamos conversar?</h2>
+        <p>Conte seu desafio. A estratégia a gente resolve.</p>
+    </div>
+    
+    <form class="contact-form" action="https://formspree.io/f/mwvvpzbg" method="POST">
+        <div class="form-row">
+            <div class="form-group">
+                <label>Nome *</label>
+                <input type="text" name="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label>Telefone *</label>
+                <input type="text" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
         </div>
-        <form class="contact-form">
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Nome *</label>
-                    <input type="text" placeholder="Seu nome completo" required>
-                </div>
-                <div class="form-group">
-                    <label>Telefone *</label>
-                    <input type="text" placeholder="(00) 00000-0000" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>E-mail *</label>
-                <input type="email" placeholder="seu@email.com" required>
-            </div>
-            <div class="form-group">
-                <label>Mensagem *</label>
-                <textarea placeholder="Conte sobre seu projeto ou desafio..." rows="4"></textarea>
-            </div>
-            <button type="submit"><i data-lucide="send"></i> Enviar mensagem</button>
-        </form>
-    </section>
+        <div class="form-group">
+            <label>E-mail *</label>
+            <input type="email" name="email" placeholder="seu@email.com" required>
+        </div>
+        <div class="form-group">
+            <label>Mensagem *</label>
+            <textarea name="mensagem" placeholder="Conte sobre seu projeto ou desafio..." rows="4" required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="Novo contato: Site Área 51">
+        
+        <button type="submit"><i data-lucide="send"></i> Enviar mensagem</button>
+    </form>
+</section>
 
 <footer class="main-footer">
     <div class="footer-container">
