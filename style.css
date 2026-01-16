@@ -201,14 +201,6 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     #sobre { padding: 60px 5%; } 
     #cases { padding: 80px 5%; } 
     .main-footer { padding: 50px 5%;}  
-    #texto_sobre {
-        font-size: 0.9rem;
-        padding: 0px,10px,0px,10px; 
-    }
-    #texto_area {
-        font-size: 0.9rem;
-        padding: 0px,10px,0px,10px;
-    }
 }
 
 .chart-container {
