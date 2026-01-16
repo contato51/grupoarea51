@@ -67,19 +67,62 @@ const phoneMask = (value) => {
   return value;
 }
 
-// Aplica a função ao campo de telefone
+
+
 const telInput = document.querySelector('input[name="telefone"]');
 if (telInput) {
-    telInput.addEventListener('keyup', (event) => handlePhone(event));
+    telInput.addEventListener('keyup', (e) => {
+        e.target.value = phoneMask(e.target.value);
+    });
 }
 
 const textarea = document.querySelector('textarea[name="mensagem"]');
 const count = document.getElementById('char-count');
 
-textarea.addEventListener('input', () => {
-    const remaining = 8000 - textarea.value.length;
-    count.textContent = `Restam ${remaining} caracteres`;
-    
-    // Alerta visual quando estiver acabando
-    count.style.color = remaining < 100 ? '#ff4444' : '#666';
-});
+if (textarea && count) {
+    textarea.addEventListener('input', () => {
+        const remaining = 8000 - textarea.value.length;
+        count.textContent = `Restam ${remaining} caracteres`;
+        count.style.color = remaining < 100 ? '#ff4444' : '#666';
+    });
+}
+
+// 5. Envio AJAX Formspree (Sem recarregar a página)
+const contactForm = document.getElementById("my-form");
+const statusMsg = document.getElementById("status-message");
+const submitBtn = document.getElementById("submit-button");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Enviando...";
+
+        fetch("https://formspree.io/f/mqeeeeqz", {
+            method: "POST",
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            statusMsg.style.display = "block";
+            if (response.ok) {
+                statusMsg.innerHTML = "✅ Mensagem enviada com sucesso!";
+                statusMsg.style.color = "#22c55e";
+                contactForm.reset();
+                if(count) count.textContent = "Restam 8000 caracteres";
+                submitBtn.style.display = "none";
+            } else {
+                statusMsg.innerHTML = "❌ Erro ao enviar. Tente novamente.";
+                statusMsg.style.color = "#ff4444";
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Enviar mensagem';
+            }
+        }).catch(() => {
+            statusMsg.style.display = "block";
+            statusMsg.innerHTML = "❌ Erro de conexão.";
+            statusMsg.style.color = "#ff4444";
+            submitBtn.disabled = false;
+        });
+    });
+}

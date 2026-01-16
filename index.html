@@ -169,35 +169,56 @@
         <p>Conte seu desafio ou estratégia a gente resolve.</p>
     </div>
     
-    <form class="contact-form" action="https://formspree.io/f/mqeeeeqz" method="POST">
-        <div class="form-row">
-            <div class="form-group">
-                <label>Nome *</label>
-                <input type="text" name="nome" placeholder="Seu nome completo" required>
-            </div>
-            <div class="form-group">
-                <label>Telefone *</label>
-                <input type="text" name="telefone" placeholder="(00) 00000-0000" required>
-            </div>
+   <form class="contact-form" id="my-form">
+    <div class="form-row">
+        <div class="form-group">
+            <label>Nome *</label>
+            <input type="text" name="nome" placeholder="Seu nome completo" required>
         </div>
         <div class="form-group">
-            <label>E-mail *</label>
-            <input type="email" name="email" placeholder="seu@email.com" required>
+            <label>Telefone *</label>
+            <input 
+                type="text" 
+                name="telefone" 
+                id="telefone" 
+                placeholder="(00) 00000-0000" 
+                maxlength="15" 
+                required
+            >
         </div>
-        <div class="form-group">
-            <label>Mensagem *</label>
-            <textarea 
-                name="mensagem" 
-                placeholder="Conte sobre seu projeto ou desafio..." 
-                rows="4" 
-                maxlength="8000" 
-                required></textarea>
-        </div>
+    </div>
+    <div class="form-group">
+        <label>E-mail *</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email"
+            placeholder="seu@email.com" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Por favor, digite um e-mail válido (ex: nome@dominio.com)"
+            required
+        >
+    </div>
+    <div class="form-group">
+        <label>Mensagem *</label>
+        <textarea 
+            name="mensagem" 
+            id="mensagem"
+            placeholder="Conte sobre seu projeto ou desafio..." 
+            rows="4" 
+            maxlength="8000" 
+            required></textarea>
+        <small id="char-count" style="color: #666; font-size: 0.75rem;">Restam 8000 caracteres</small>
+    </div>
 
-        <input type="hidden" name="_subject" value="Novo contato: Site Área 51">
-        
-        <button type="submit"><i data-lucide="send"></i> Enviar mensagem</button>
-    </form>
+    <input type="hidden" name="_subject" value="Novo contato: Site Área 51">
+    
+    <button type="submit" id="submit-button">
+        <i data-lucide="send"></i> Enviar mensagem
+    </button>
+    
+    <p id="status-message" style="margin-top: 15px; font-weight: 600; display: none;"></p>
+</form>
 </section>
 
 <footer class="main-footer">
