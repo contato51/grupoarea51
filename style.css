@@ -200,7 +200,11 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     #areas { padding: 80px 8%; } 
     #sobre { padding: 60px 5%; } 
     #cases { padding: 80px 5%; } 
-    .main-footer { padding: 50px 5%;}  
+    .main-footer { padding: 50px 5%;}
+    #contato { padding: 80px 5%; }
+    .contact-header h2 { font-size: 2.2rem; }  
+    #submit-button { margin-top: 20px;
+    width: 100%;  justify-content: center;  }
 }
 
 .chart-container {
