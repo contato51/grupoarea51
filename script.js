@@ -72,3 +72,14 @@ const telInput = document.querySelector('input[name="telefone"]');
 if (telInput) {
     telInput.addEventListener('keyup', (event) => handlePhone(event));
 }
+
+const textarea = document.querySelector('textarea[name="mensagem"]');
+const count = document.getElementById('char-count');
+
+textarea.addEventListener('input', () => {
+    const remaining = 8000 - textarea.value.length;
+    count.textContent = `Restam ${remaining} caracteres`;
+    
+    // Alerta visual quando estiver acabando
+    count.style.color = remaining < 100 ? '#ff4444' : '#666';
+});
