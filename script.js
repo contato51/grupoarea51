@@ -53,3 +53,22 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
+// Função para aplicar a máscara de telefone
+const handlePhone = (event) => {
+  let input = event.target;
+  input.value = phoneMask(input.value);
+}
+
+const phoneMask = (value) => {
+  if (!value) return "";
+  value = value.replace(/\D/g, ''); // Remove tudo que não é número
+  value = value.replace(/(\d{2})(\d)/, "($1) $2"); // Coloca parênteses no DDD
+  value = value.replace(/(\d{5})(\d)/, "$1-$2"); // Coloca o hífen no quinto dígito
+  return value;
+}
+
+// Aplica a função ao campo de telefone
+const telInput = document.querySelector('input[name="telefone"]');
+if (telInput) {
+    telInput.addEventListener('keyup', (event) => handlePhone(event));
+}
