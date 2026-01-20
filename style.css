@@ -87,7 +87,13 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
 .btn-case { background: white; border: 1px solid #e0e0e0; padding: 10px 18px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; transition: 0.3s; }
 .btn-case:hover { background: #f8f9fa; border-color: #ccc; }
 
+#mato_grosso {
+    max-height: 100px;
+}
 
+#tribeca {
+    max-height: 100px;
+}
 .video-wrapper img {
     position: absolute;
     top: 0;
