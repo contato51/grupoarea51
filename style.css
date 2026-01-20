@@ -18,8 +18,8 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     HERO SECTION
    ========================================== */
 .hero { 
-    height: 100vh; background: #0d0d0d; display: flex; justify-content: space-between; 
-    align-items: center; padding: 0 10%; 
+    height: 95vh; background: #0d0d0d; display: flex; justify-content: space-between; 
+    align-items: center; padding: 0 15%; 
     background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px); 
     background-size: 32px 32px; 
 }
@@ -41,7 +41,7 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     SEÇÕES GERAIS E CARDS
    ========================================== */
 .light-section { background: #f9fafb; padding: 100px 8%; text-align: center; }
-.white-section { background: white; padding: 5% 10%; text-align: center; }
+.white-section { background: white; padding: 0% 10%; text-align: center; }
 .section-header h2 { font-size: 2.8rem; margin-bottom: 15px; }
 .section-header p { color: #666; margin-bottom: 60px; }
 
@@ -119,11 +119,11 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
 /* ==========================================
     CARROSSEL DE LOGOS
    ========================================== */
-.partners-section { background: #fff; padding: 60px 0; text-align: center; border-top: 1px solid #eee; }
+.partners-section { background: #fff; padding: 20px 0; text-align: center; border-top: 1px solid #eee; }
 .partners-title { font-size: 0.8rem; color: #999; letter-spacing: 2px; margin-bottom: 40px; }
 .logos-slider { overflow: hidden; white-space: nowrap; position: relative; padding: 20px 0; }
 .logos-track { display: inline-flex; animation: scroll 25s linear infinite; gap: 60px; align-items: center; }
-.logo-item { font-weight: 700; color: #333; font-size: 1.2rem; opacity: 0.4; padding: 20px 40px; background: #f8f9fa; border-radius: 12px; }
+.logo-item { font-weight: 700; color: #333; font-size: 1.2rem; opacity: 1.0; padding: 20px 40px;  border-radius: 12px; }
 
 @keyframes scroll {
     from { transform: translateX(0); }
