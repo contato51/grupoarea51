@@ -90,9 +90,15 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
 #mato_grosso {
     max-height: 100px;
 }
+#grio {
+    max-height: 40px;
+}
+#Universitario {
+    max-height: 350px;
+}
 
 #tribeca {
-    max-height: 100px;
+    max-height: 50px;
 }
 .video-wrapper img {
     position: absolute;
@@ -122,7 +128,7 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
 .partners-section { background: #fff; padding: 20px 0; text-align: center; border-top: 1px solid #eee; }
 .partners-title { font-size: 0.8rem; color: #999; letter-spacing: 2px; margin-bottom: 40px; }
 .logos-slider { overflow: hidden; white-space: nowrap; position: relative; padding: 20px 0; }
-.logos-track { display: inline-flex; animation: scroll 25s linear infinite; gap: 60px; align-items: center; }
+.logos-track { display: inline-flex; animation: scroll 25s linear infinite; gap: 30px; align-items: center; max-height: 10px; margin: 0 auto; }
 .logo-item { font-weight: 700; color: #333; font-size: 1.2rem; opacity: 1.0; padding: 20px 40px;  border-radius: 12px; }
 
 @keyframes scroll {
