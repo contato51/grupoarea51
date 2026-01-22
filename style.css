@@ -20,8 +20,9 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
 .hero { 
     height: 95vh; background: #131311; display: flex; justify-content: space-between; 
     align-items: center; padding: 0 15%; 
-    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px); 
-    background-size: 32px 32px; 
+/* Bolinhas de fundo */
+ /*   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px); 
+    background-size: 32px 32px; */
 }
 .hero-logo img {
     max-width: 400px; 
